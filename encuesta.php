@@ -41,7 +41,6 @@ $res=mysqli_query($conexion,"SELECT a.boleta, ma.idMateriaAlumno, m.nomMateria F
 <body>
     <br>
     <br>
-    <a href="logOutAlumnos.php">Cerrar Sesión</a>
     <div class="container ref">
         <h1 class="titulo">Encuesta de satifaccion escolar</h1>
         <p style="font-size: 20px;">Contestar todas las pregunta y realizar un comentario</p>
