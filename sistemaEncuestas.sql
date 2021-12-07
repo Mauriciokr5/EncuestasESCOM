@@ -162,6 +162,7 @@ SELECT AVG(q2) FROM respuestas;
 SELECT AVG(q3) FROM respuestas;
 SELECT AVG(q4) FROM respuestas;
 SELECT AVG(q5) FROM respuestas;
+SELECT AVG(q1),AVG(q2),AVG(q3),AVG(q4),AVG(q5) FROM respuestas;
 
 
 /*-Comentarios*/

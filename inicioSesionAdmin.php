@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if(!empty($_SESSION['user'])){
+    header('Location:vistaGeneral.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,13 +28,15 @@
                 <div style="display: table; height: 100%;">
                     <div class="formulario">
                         <img src="./src/imgUser.png" alt="circulo" required="true" style="width: 100%;">
+                        <div id="error"></div>
                         <br><br>
                         <form action="">
+                        <!--<form action="inicioSesionAdminEnviar.php" method="POST">-->
                             <input id="user" class="credenciales" type="text" name="user" placeholder="Usuario" required="true">
                             <br><br>
                             <input id="password" class="credenciales" type="password" name="password" placeholder="Contraseña" required="true">
                             <br><br>
-                            <input id="enviar" type="submit" name="Aceptar" value="Enviar" class="form-control bot" required="true">
+                            <input type="submit" value="Enviar" class="form-control bot" required="true" id = "enviar">
                         </form>
                     </div>
 
